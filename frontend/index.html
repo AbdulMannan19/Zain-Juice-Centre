@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Cafe - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/logo.svg" alt="Juice Cafe Logo" class="logo" id="cafe-logo">
+            <h1>Juice Cafe</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h2>Our Fresh Juices</h2>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <aside class="order-summary">
+            <h3>Current Order</h3>
+            <div id="order-items">
+                <p class="empty-order">No items yet</p>
+            </div>
+            <div class="order-total">
+                <strong>Total: $<span id="order-total">0.00</span></strong>
+            </div>
+            <button id="place-order-btn" class="btn-primary" disabled>Place Order</button>
+        </aside>
+    </main>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Order Confirmed!</h2>
+            <p>Your order has been placed successfully.</p>
+            <p class="order-id">Order ID: <strong id="confirmed-order-id"></strong></p>
+            <button id="close-modal-btn" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

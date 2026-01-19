@@ -1,0 +1,44 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tropicalBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF9C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE082;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="tropicalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA726;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#tropicalBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Tropical juice -->
+  <path d="M 152 125 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 125 Z" 
+        fill="url(#tropicalGlow)" opacity="0.85"/>
+  
+  <!-- Pineapple chunk -->
+  <polygon points="200,170 210,180 200,190 190,180" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  <line x1="195" y1="175" x2="205" y2="185" stroke="#FFA500" stroke-width="1"/>
+  <line x1="205" y1="175" x2="195" y2="185" stroke="#FFA500" stroke-width="1"/>
+  
+  <!-- Mango pieces -->
+  <ellipse cx="180" cy="200" rx="12" ry="8" fill="#FF8C00" opacity="0.8"/>
+  <ellipse cx="220" cy="210" rx="10" ry="7" fill="#FF8C00" opacity="0.8"/>
+  
+  <!-- Bubbles -->
+  <circle cx="170" cy="150" r="5" fill="#FFF" opacity="0.6"/>
+  <circle cx="230" cy="165" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="190" cy="230" r="3" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Umbrella decoration -->
+  <path d="M 220 90 Q 230 95 240 90" fill="#FF6B6B" stroke="#C44" stroke-width="1"/>
+  <line x1="230" y1="90" x2="230" y2="110" stroke="#8B4513" stroke-width="2"/>
+  
+  <!-- Straw -->
+  <rect x="210" y="50" width="8" height="100" fill="#00CED1" stroke="#008B8B" stroke-width="1"/>
+  <ellipse cx="214" cy="50" rx="4" ry="2" fill="#00CED1"/>
+</svg>

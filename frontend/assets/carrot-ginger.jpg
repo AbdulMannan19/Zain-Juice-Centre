@@ -1,0 +1,40 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="carrotBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE0B2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFCC80;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="carrotGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#carrotBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Carrot juice -->
+  <path d="M 152 135 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 135 Z" 
+        fill="url(#carrotGlow)" opacity="0.85"/>
+  
+  <!-- Ginger root -->
+  <ellipse cx="190" cy="180" rx="18" ry="12" fill="#D4A574" opacity="0.7" transform="rotate(-15 190 180)"/>
+  <ellipse cx="210" cy="200" rx="15" ry="10" fill="#D4A574" opacity="0.7" transform="rotate(20 210 200)"/>
+  
+  <!-- Bubbles -->
+  <circle cx="175" cy="160" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="225" cy="170" r="5" fill="#FFF" opacity="0.6"/>
+  <circle cx="195" cy="220" r="3" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Carrot top garnish -->
+  <line x1="185" y1="100" x2="180" y2="85" stroke="#4CAF50" stroke-width="3"/>
+  <line x1="190" y1="100" x2="188" y2="82" stroke="#4CAF50" stroke-width="3"/>
+  <line x1="195" y1="100" x2="196" y2="84" stroke="#4CAF50" stroke-width="3"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="115" fill="#FF5722" stroke="#D84315" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#FF5722"/>
+</svg>

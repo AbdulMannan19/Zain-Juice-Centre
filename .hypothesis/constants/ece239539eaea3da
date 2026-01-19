@@ -1,0 +1,4 @@
+# file: F:\Zain-Juice-Centre\backend\app.py
+# hypothesis_version: 6.150.2
+
+[201, 400, 500, 5000, '../frontend', '/', '/api/menu', '/api/orders', '/api/orders/stream', '/kitchen', ': heartbeat\n\n', 'Cache-Control', 'Connection', 'GET', 'POST', 'X-Accel-Buffering', '__main__', 'error', 'id', 'index.html', 'items', 'keep-alive', 'kitchen.html', 'menuItemId', 'message', 'name', 'no', 'no-cache', 'orderId', 'pending', 'quantity', 'status', 'text/event-stream', 'timestamp']

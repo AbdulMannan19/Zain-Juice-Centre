@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="berryBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCE4EC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8BBD0;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="berryGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C2185B;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#berryBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Berry smoothie -->
+  <path d="M 152 130 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 130 Z" 
+        fill="url(#berryGlow)" opacity="0.85"/>
+  
+  <!-- Berries -->
+  <circle cx="180" cy="170" r="10" fill="#8B0000" opacity="0.8"/>
+  <circle cx="220" cy="180" r="8" fill="#8B0000" opacity="0.8"/>
+  <circle cx="200" cy="200" r="9" fill="#8B0000" opacity="0.8"/>
+  <circle cx="190" cy="220" r="7" fill="#8B0000" opacity="0.8"/>
+  
+  <!-- Seeds on berries -->
+  <circle cx="180" cy="168" r="1" fill="#FFD700"/>
+  <circle cx="182" cy="172" r="1" fill="#FFD700"/>
+  <circle cx="220" cy="178" r="1" fill="#FFD700"/>
+  <circle cx="222" cy="182" r="1" fill="#FFD700"/>
+  
+  <!-- Bubbles -->
+  <circle cx="170" cy="150" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="230" cy="160" r="3" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="110" fill="#FF69B4" stroke="#FF1493" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#FF69B4"/>
+</svg>

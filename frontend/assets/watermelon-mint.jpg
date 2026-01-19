@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="watermelonBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE5E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB3BA;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="watermelonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1744;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#watermelonBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Watermelon juice -->
+  <path d="M 152 140 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 140 Z" 
+        fill="url(#watermelonGlow)" opacity="0.8"/>
+  
+  <!-- Watermelon seeds -->
+  <ellipse cx="180" cy="170" rx="3" ry="5" fill="#000" opacity="0.6"/>
+  <ellipse cx="220" cy="180" rx="3" ry="5" fill="#000" opacity="0.6"/>
+  <ellipse cx="195" cy="200" rx="3" ry="5" fill="#000" opacity="0.6"/>
+  <ellipse cx="210" cy="220" rx="3" ry="5" fill="#000" opacity="0.6"/>
+  <ellipse cx="185" cy="230" rx="3" ry="5" fill="#000" opacity="0.6"/>
+  
+  <!-- Mint leaves -->
+  <ellipse cx="175" cy="120" rx="8" ry="15" fill="#1ABC9C" transform="rotate(-25 175 120)"/>
+  <ellipse cx="185" cy="115" rx="7" ry="13" fill="#1ABC9C" transform="rotate(-10 185 115)"/>
+  <line x1="180" y1="110" x2="180" y2="130" stroke="#0E8C6F" stroke-width="2"/>
+  
+  <!-- Bubbles -->
+  <circle cx="170" cy="160" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="230" cy="170" r="5" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="120" fill="#4CAF50" stroke="#388E3C" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#4CAF50"/>
+</svg>

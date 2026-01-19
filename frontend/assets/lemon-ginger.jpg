@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lemonBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFDE7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF9C4;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lemonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFF176;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9A825;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#lemonBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Lemon juice -->
+  <path d="M 152 145 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 145 Z" 
+        fill="url(#lemonGlow)" opacity="0.75"/>
+  
+  <!-- Lemon slice -->
+  <circle cx="200" cy="190" r="25" fill="#FFF176" stroke="#F9A825" stroke-width="2"/>
+  <line x1="200" y1="165" x2="200" y2="215" stroke="#F9A825" stroke-width="1.5"/>
+  <line x1="175" y1="190" x2="225" y2="190" stroke="#F9A825" stroke-width="1.5"/>
+  <line x1="182" y1="172" x2="218" y2="208" stroke="#F9A825" stroke-width="1.5"/>
+  <line x1="218" y1="172" x2="182" y2="208" stroke="#F9A825" stroke-width="1.5"/>
+  
+  <!-- Ginger pieces -->
+  <ellipse cx="180" cy="220" rx="10" ry="7" fill="#D4A574" opacity="0.7"/>
+  <ellipse cx="220" cy="210" rx="8" ry="6" fill="#D4A574" opacity="0.7"/>
+  
+  <!-- Bubbles -->
+  <circle cx="170" cy="165" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="230" cy="175" r="5" fill="#FFF" opacity="0.6"/>
+  <circle cx="190" cy="235" r="3" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="125" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#FFD700"/>
+</svg>

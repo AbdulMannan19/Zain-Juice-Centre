@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pineappleBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="pineappleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#pineappleBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Pineapple juice -->
+  <path d="M 152 135 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 135 Z" 
+        fill="url(#pineappleGlow)" opacity="0.8"/>
+  
+  <!-- Pineapple chunk -->
+  <polygon points="200,180 215,190 210,205 190,205 185,190" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  <line x1="192" y1="188" x2="208" y2="202" stroke="#FFA500" stroke-width="1"/>
+  <line x1="208" y1="188" x2="192" y2="202" stroke="#FFA500" stroke-width="1"/>
+  <line x1="200" y1="185" x2="200" y2="205" stroke="#FFA500" stroke-width="1"/>
+  
+  <!-- Turmeric root -->
+  <ellipse cx="180" cy="215" rx="15" ry="8" fill="#FF8F00" opacity="0.7" transform="rotate(-20 180 215)"/>
+  <ellipse cx="220" cy="220" rx="12" ry="7" fill="#FF8F00" opacity="0.7" transform="rotate(15 220 220)"/>
+  
+  <!-- Pineapple leaves garnish -->
+  <polygon points="170,95 165,80 168,95" fill="#4CAF50"/>
+  <polygon points="175,95 173,78 176,95" fill="#4CAF50"/>
+  <polygon points="180,95 181,80 182,95" fill="#4CAF50"/>
+  <polygon points="185,95 189,78 186,95" fill="#4CAF50"/>
+  
+  <!-- Bubbles -->
+  <circle cx="175" cy="160" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="225" cy="170" r="5" fill="#FFF" opacity="0.6"/>
+  <circle cx="195" cy="235" r="3" fill="#FFF" opacity="0.6"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="115" fill="#FF6F00" stroke="#E65100" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#FF6F00"/>
+</svg>

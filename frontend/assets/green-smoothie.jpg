@@ -1,0 +1,36 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="greenBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8E6C9;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#A8E063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7CB342;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#greenBg)"/>
+  
+  <!-- Glass -->
+  <path d="M 150 80 L 140 240 Q 140 260 160 260 L 240 260 Q 260 260 260 240 L 250 80 Z" 
+        fill="#FFF" opacity="0.9" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- Green smoothie -->
+  <path d="M 152 120 L 142 240 Q 142 258 160 258 L 240 258 Q 258 258 258 240 L 248 120 Z" 
+        fill="url(#greenGlow)" opacity="0.9"/>
+  
+  <!-- Kale leaves -->
+  <ellipse cx="180" cy="160" rx="15" ry="25" fill="#558B2F" opacity="0.7" transform="rotate(-20 180 160)"/>
+  <ellipse cx="220" cy="180" rx="12" ry="20" fill="#558B2F" opacity="0.7" transform="rotate(15 220 180)"/>
+  
+  <!-- Bubbles -->
+  <circle cx="170" cy="150" r="5" fill="#FFF" opacity="0.5"/>
+  <circle cx="230" cy="160" r="4" fill="#FFF" opacity="0.5"/>
+  <circle cx="190" cy="190" r="6" fill="#FFF" opacity="0.5"/>
+  <circle cx="210" cy="210" r="4" fill="#FFF" opacity="0.5"/>
+  
+  <!-- Straw -->
+  <rect x="215" y="50" width="8" height="100" fill="#9B59B6" stroke="#7D3C98" stroke-width="1"/>
+  <ellipse cx="219" cy="50" rx="4" ry="2" fill="#9B59B6"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#FF8C42" stroke="#F7DC6F" stroke-width="3"/>
+  
+  <!-- Glass body -->
+  <path d="M 40 45 L 35 85 Q 35 95 45 95 L 75 95 Q 85 95 85 85 L 80 45 Z" 
+        fill="#FFF8E7" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- Juice fill -->
+  <path d="M 41 60 L 37 85 Q 37 93 45 93 L 75 93 Q 83 93 83 85 L 79 60 Z" 
+        fill="#A8E063" opacity="0.8"/>
+  
+  <!-- Orange slice -->
+  <circle cx="60" cy="70" r="12" fill="#FF8C42" stroke="#F7DC6F" stroke-width="1.5"/>
+  <line x1="60" y1="58" x2="60" y2="82" stroke="#F7DC6F" stroke-width="1"/>
+  <line x1="48" y1="70" x2="72" y2="70" stroke="#F7DC6F" stroke-width="1"/>
+  <line x1="52" y1="62" x2="68" y2="78" stroke="#F7DC6F" stroke-width="1"/>
+  <line x1="68" y1="62" x2="52" y2="78" stroke="#F7DC6F" stroke-width="1"/>
+  
+  <!-- Straw -->
+  <rect x="67" y="30" width="4" height="35" fill="#9B59B6" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="65" y="28" width="8" height="4" rx="2" fill="#9B59B6" stroke="#2C3E50" stroke-width="1"/>
+  
+  <!-- Leaf decoration -->
+  <ellipse cx="52" cy="42" rx="6" ry="10" fill="#1ABC9C" transform="rotate(-30 52 42)"/>
+  <path d="M 52 37 Q 52 42 52 47" stroke="#0E8C6F" stroke-width="1" fill="none"/>
+  
+  <!-- Sparkles -->
+  <circle cx="30" cy="35" r="2" fill="#F7DC6F"/>
+  <circle cx="90" cy="40" r="2" fill="#F7DC6F"/>
+  <circle cx="25" cy="75" r="2" fill="#F7DC6F"/>
+  <circle cx="95" cy="80" r="2" fill="#F7DC6F"/>
+</svg>
