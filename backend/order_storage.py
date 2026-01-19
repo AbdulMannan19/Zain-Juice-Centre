@@ -62,11 +62,11 @@ class OrderStorage:
 def generate_order_id() -> str:
     """
     Generate a unique Order ID using simple sequential numbering
-    Format: {number}
-    Example: 1, 2, 3, etc.
+    Format: #{number}
+    Example: #1, #2, #3, etc.
     """
     next_number = order_storage.get_next_order_number()
-    return str(next_number)
+    return f"#{next_number}"
 
 
 # Global order storage instance
