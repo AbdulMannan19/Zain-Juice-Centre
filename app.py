@@ -1,13 +1,19 @@
 # Juice Cafe Ordering System - Backend
-from flask import Flask, jsonify, request, Response
+from flask import Flask, jsonify, request, Response, send_from_directory
 from flask_cors import CORS
 import json
 import time
 import queue
+import os
+import sys
+
+# Add backend directory to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'backend'))
+
 from menu_data import menu_items
 from order_storage import order_storage, generate_order_id, Order, OrderItem
 
-app = Flask(__name__, static_folder='../frontend', static_url_path='')
+app = Flask(__name__, static_folder='frontend', static_url_path='')
 CORS(app)
 
 # SSE clients for real-time updates
@@ -169,17 +175,13 @@ def serve_menu_page():
 def serve_kitchen_page():
     """Serve the kitchen display page"""
     return app.send_static_file('kitchen.html')
-    
-    # Set SSE headers
-    return Response(
-        event_stream(),
-        mimetype='text/event-stream',
-        headers={
-            'Cache-Control': 'no-cache',
-            'Connection': 'keep-alive',
-            'X-Accel-Buffering': 'no'  # Disable buffering for nginx
-        }
-    )
+
+
+@app.route('/assets/<path:filename>')
+def serve_assets(filename):
+    """Serve static assets (images, etc.)"""
+    assets_dir = os.path.join(app.static_folder, 'assets')
+    return send_from_directory(assets_dir, filename)
 
 
 if __name__ == '__main__':
