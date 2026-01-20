@@ -75,7 +75,7 @@ function renderMenuItems() {
                 <h3 class="menu-item-name">${item.name}</h3>
                 <p class="menu-item-description">${item.description}</p>
                 <div class="menu-item-footer">
-                    <span class="menu-item-price">$${item.price.toFixed(2)}</span>
+                    <span class="menu-item-price">₹${item.price}</span>
                 </div>
                 <button class="add-to-order-btn" onclick="addToOrder('${item.id}')">
                     Add to Order
@@ -130,7 +130,7 @@ function removeFromOrder(itemId) {
 function updateOrderDisplay() {
     if (currentOrder.length === 0) {
         orderItemsContainer.innerHTML = '<p class="empty-order">No items yet</p>';
-        orderTotalElement.textContent = '0.00';
+        orderTotalElement.textContent = '0';
         placeOrderBtn.disabled = true;
         return;
     }
@@ -140,7 +140,7 @@ function updateOrderDisplay() {
         <div class="order-item">
             <span class="order-item-name">${item.name}</span>
             <span class="order-item-quantity">x${item.quantity}</span>
-            <span class="order-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+            <span class="order-item-price">₹${(item.price * item.quantity)}</span>
             <button class="remove-item-btn" onclick="removeFromOrder('${item.menuItemId}')" 
                     title="Remove one">×</button>
         </div>
@@ -148,7 +148,7 @@ function updateOrderDisplay() {
     
     // Calculate and display total
     const total = currentOrder.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    orderTotalElement.textContent = total.toFixed(2);
+    orderTotalElement.textContent = total;
     
     // Enable place order button
     placeOrderBtn.disabled = false;
