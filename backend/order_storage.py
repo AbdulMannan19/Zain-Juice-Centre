@@ -36,7 +36,6 @@ class OrderStorage:
     def add_order(self, order: Order) -> None:
         """Add an order to storage"""
         self.orders.append(order)
-        self.order_counter += 1
     
     def get_all_orders(self) -> List[Order]:
         """Retrieve all orders"""
@@ -53,10 +52,6 @@ class OrderStorage:
         """Clear all orders (useful for testing or restart)"""
         self.orders = []
         self.order_counter = 0
-    
-    def get_next_order_number(self) -> int:
-        """Get the next order number"""
-        return self.order_counter + 1
 
 
 def generate_order_id() -> str:
@@ -65,8 +60,8 @@ def generate_order_id() -> str:
     Format: #{number}
     Example: #1, #2, #3, etc.
     """
-    next_number = order_storage.get_next_order_number()
-    return f"#{next_number}"
+    order_storage.order_counter += 1
+    return f"#{order_storage.order_counter}"
 
 
 # Global order storage instance
